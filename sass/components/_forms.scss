@@ -1,0 +1,112 @@
+@use "../abstracts/functions" as f;
+
+/* FORM */
+.c-intro-form {
+    margin-top: f.rem(40px);
+    display: flex;
+    flex-direction: column;
+    gap: f.rem(10px); 
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    gap: f.rem(8px);
+
+    position: relative;
+}
+
+.c-intro-form input {
+    padding: f.rem(10px) f.rem(36px);
+    border-radius: 48px;
+    font-weight: 400;
+    border: 1.5px solid var(--color-pale-blue2);
+    font-size: f.rem(15px);
+
+    &::placeholder {
+        font-size: f.rem(14px);
+        color: var(--color-pale-blue);
+    }
+}
+
+.form-control.success input {
+	border-color: #2ecc71;
+}
+
+.form-control.error input {
+	border-color: #e74c3c;
+}
+
+.form-control i {
+	visibility: hidden;
+	position: absolute;
+	top: f.rem(15px);
+	right: f.rem(20px);
+}
+
+.form-control.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control.error {
+    margin-bottom: f.rem(30px);
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.form-control small {
+    position: absolute;
+    font-size: f.rem(13px);
+    font-style: italic;
+	color: #e74c3c;
+
+    top: f.rem(50px);
+	left: f.rem(35px);
+    
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+@media (width >= 43.75em) {
+    .c-intro-form {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: f.rem(15px); 
+    }
+    
+    .form-control {
+        flex-grow: 2;
+    }
+
+    .c-intro-form input {
+        font-size: f.rem(18px);
+        padding: f.rem(18px) f.rem(36px);
+    
+        &::placeholder {
+            font-size: f.rem(14px);
+            color: var(--color-pale-blue);
+        }
+    }
+
+    .form-control i {
+        top: f.rem(22px);
+    }
+
+    .form-control.error {
+        margin-bottom: 0;
+    }
+
+    .form-control small {
+        font-size: f.rem(15px);
+    
+        top: f.rem(70px);
+        left: f.rem(35px);
+    }
+}

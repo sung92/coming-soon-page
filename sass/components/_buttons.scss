@@ -1,0 +1,32 @@
+@use "../abstracts/functions" as f;
+
+.btn {
+    font-size: f.rem(14px);
+    font-weight: 600;
+    letter-spacing: f.rem(1px);
+    color: var(--color-white);
+
+    box-shadow: 0px 24px 19px -8px rgba(0,0,0,0.1);
+    border-radius: 48px;
+    border: 1px solid var(--color-blue);
+    background-color: var(--color-blue);
+
+    padding: f.rem(12px) f.rem(0px);
+    cursor: pointer;
+
+    transition: all 0.3s;
+
+    &:hover {
+        // color: var(--color-blue);
+        background-color: rgba(76, 123, 243, .7);
+    }
+
+}
+
+@media (width >= 43.75em) {
+    .btn {
+        padding: 0 f.rem(40px);
+        flex-grow: 1;
+        align-self: stretch;
+    }
+}

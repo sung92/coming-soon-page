@@ -1,0 +1,56 @@
+@use "../abstracts/functions" as f;
+
+/* LOGO */
+.c-intro-logo {
+    margin-top: f.rem(70px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    width: f.rem(56px);
+}
+
+/* HEADING */
+.c-intro-heading {
+    margin-top: f.rem(42px);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    gap: f.rem(10px);
+}
+
+.primary-heading {
+    font-size: f.rem(22px);
+    font-weight: 400;
+    color: var(--color-gray);
+}
+
+.primary-heading span {
+    font-weight: 700;
+    color: black;
+}
+
+.c-intro-heading p {
+    font-size: f.rem(14px);
+}
+
+.c-dashboard {
+    margin-top: f.rem(75px);
+}
+
+@media (width >= 43.75em) {
+    .logo {
+        width: f.rem(80px)
+    }
+
+    .primary-heading {
+        font-size: f.rem(48px);
+    }
+
+    .c-intro-heading p {
+        font-size: f.rem(20px);
+    }
+}
