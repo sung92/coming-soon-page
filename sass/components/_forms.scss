@@ -47,6 +47,7 @@
 .form-control.success i.fa-check-circle {
 	color: #2ecc71;
 	visibility: visible;
+    pointer-events: none;
 }
 
 .form-control.error {
@@ -56,6 +57,7 @@
 .form-control.error i.fa-exclamation-circle {
 	color: #e74c3c;
 	visibility: visible;
+    pointer-events: none;
 }
 
 .form-control small {

@@ -51,3 +51,11 @@ body {
     display: grid;
     place-content: center;
 }
+
+/**************************/
+/* Main */
+/**************************/
+
+main {
+  max-width: f.rem(640px);
+}

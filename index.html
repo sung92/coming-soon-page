@@ -26,11 +26,11 @@
   <main>
 
     <!--INTRO-->
-    <div class="c-intro" aria-live="assertive">
+    <div class="c-intro">
       <!--Intro Logo-->
-      <div class="c-intro-logo">
+      <header class="c-intro-logo">
         <img src="images/logo.svg" class="logo" alt="Ping">
-      </div>
+      </header>
       
       <!--Intro Title-->
       <hgroup class="c-intro-heading">
@@ -41,11 +41,15 @@
       <!--Intro Form-->
       <form class="c-intro-form" id="form">
         <div class="form-control">
-          <input id="email" placeholder="Your email address...">
+          <label for="email" class="visually-hidden">Insert your email</label>
+          <input id="email" aria-describedby="email-validation" placeholder="Your email address...">
           <i class="fas fa-check-circle"></i>
           <i class="fas fa-exclamation-circle"></i>
-          <small>Error message</small>
+          <small id="email-validation">Error message</small>
         </div>
+
+        <div aria-live="assertive" id="message"></div>
+
         <button class="btn">Notify Me</button>
       </form>
     </div>
