@@ -29,12 +29,13 @@
 <body>
   <main>
 
+    <!--HEADER-->
+    <header class="c-intro-logo">
+      <img src="/logo.b3ecd760.svg" class="logo" alt="Ping">
+    </header>
+
     <!--INTRO-->
     <div class="c-intro">
-      <!--Intro Logo-->
-      <header class="c-intro-logo">
-        <img src="/logo.b3ecd760.svg" class="logo" alt="Ping">
-      </header>
       
       <!--Intro Title-->
       <hgroup class="c-intro-heading">
@@ -57,10 +58,8 @@
 }
 
 </style><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"></path></svg>
-          <small id="email-validation">Error message</small>
+          <small id="email-validation" aria-live="assertive"></small>
         </div>
-
-        <div aria-live="assertive" id="message"></div>
         
         <button class="btn">Notify Me</button>
       </form>
