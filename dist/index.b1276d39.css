@@ -157,9 +157,12 @@ footer {
 }
 
 .logos-btn:hover {
-  color: var(--color-white);
   border: 1px solid var(--color-white);
   background-color: var(--color-blue);
+}
+
+.logos-btn:hover .social-logo {
+  fill: var(--color-white);
 }
 
 .copyright-text {

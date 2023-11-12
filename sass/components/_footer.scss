@@ -31,11 +31,16 @@ footer {
     transition: all 0.3s;
 
     &:hover {
-        color: var(--color-white);
         border: 1px solid var(--color-white);
         background-color: var(--color-blue);
     }
+
+    // To fill the logo in white as soon as the mouse enters the circle.
+    &:hover .social-logo {
+        fill: var(--color-white);
+    }
 }
+
 
 .copyright-text {
     font-size: f.rem(12px);
