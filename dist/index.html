@@ -45,15 +45,23 @@
       <!--Intro Form-->
       <form class="c-intro-form" id="form">
         <div class="form-control">
-          <label for="email" class="visually-hidden">Insert your email</label>
+          <label for="email" class="visually-hidden">email required</label>
           <input id="email" aria-describedby="email-validation" placeholder="Your email address...">
-          <i class="fas fa-check-circle"></i>
-          <i class="fas fa-exclamation-circle"></i>
+          <svg class="fa-check-circle" xmlns="http://www.w3.org/2000/svg" height="1em" viewbox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg {
+  fill: #57f254;
+}
+
+</style><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM369 209L241 337c-9.4 9.4-24.6 9.4-33.9 0l-64-64c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l47 47L335 175c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9z"></path></svg>
+          <svg class="fa-exclamation-circle" xmlns="http://www.w3.org/2000/svg" height="1em" viewbox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg {
+  fill: red;
+}
+
+</style><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"></path></svg>
           <small id="email-validation">Error message</small>
         </div>
 
         <div aria-live="assertive" id="message"></div>
-
+        
         <button class="btn">Notify Me</button>
       </form>
     </div>
